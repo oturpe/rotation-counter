@@ -1,3 +1,4 @@
+#include "RotationCounter.h"
 #include "Arduino.h"
 #include "new.h"
 #include "LinearSensorReader.h"

@@ -5,6 +5,7 @@
  *      Author: Otto Urpelainen
  */
 
+#include "RotationCounter.h"
 #include "Arduino.h"
 #include "SerialReporter.h"
 
