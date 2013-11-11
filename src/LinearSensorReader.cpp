@@ -13,8 +13,8 @@ LinearSensorReader::LinearSensorReader(int sensorPin) :
 }
 
 bool LinearSensorReader::read() {
-    static const int THRESHOLD_HIGH = 550;
-    static const int THRESHOLD_LOW = 500;
+    static const int THRESHOLD_HIGH = 520;
+    static const int THRESHOLD_LOW = 490;
 
     int value = analogRead(sensorPin);
     bool found =  value > THRESHOLD_HIGH;
@@ -22,7 +22,7 @@ bool LinearSensorReader::read() {
 
    #ifdef __DEBUG
         Serial.print("DEBUG read:");
-        Serial.print(value);
+        Serial.println(value);
    #endif
 
     // In grey zone.
@@ -39,4 +39,3 @@ bool LinearSensorReader::read() {
     passing=false;
     return false;
 }
-
