@@ -6,7 +6,6 @@
  */
 
 #include "Arduino.h"
-#include "SensorReader.h"
 #include "LinearSensorReader.h"
 #include "RotationCounter.h"
 

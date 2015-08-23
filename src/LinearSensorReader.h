@@ -8,6 +8,8 @@
 #ifndef LINEARSENSORREADER_H_
 #define LINEARSENSORREADER_H_
 
+#include "SensorReader.h"
+
 class LinearSensorReader : public SensorReader {
 public:
     /*'
@@ -34,4 +36,4 @@ private:
     bool passing;
 };
 
-#endif /* LINEARSENSOR_H_ */
+#endif /* LINEARSENSORREADER_H_ */

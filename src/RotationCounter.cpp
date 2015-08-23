@@ -6,11 +6,12 @@
  */
 
 #include "RotationCounter.h"
-#include "SensorReader.h"
 #include "LinearSensorReader.h"
 #include "LatchSensorReader.h"
 
 SensorReader * RotationCounter::initializeSensor() {
     int sensorPin = 7;
     return new LatchSensorReader(sensorPin);
+
+    // TODO: Add example for LinearSensorReader use
 }

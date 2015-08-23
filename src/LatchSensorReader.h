@@ -5,16 +5,24 @@
  *      Author: Otto Urpelainen
  */
 
-#include "SensorReader.h"
-
 #ifndef LATCHSENSORREADER_H_
 #define LATCHSENSORREADER_H_
+
+#include "SensorReader.h"
 
 /**
  * Sensor reader that reads values from Hall effect latch type sensors.
  * This sensor needs to pass both north and south pole during a rotation to
  * read the value correctly. Sensor is connected to a digital input pin which
  * will get pullup enabled.
+ *
+ * @bug
+ *     (Suspected) This class was tested with Hall effect latch us1881kua.
+ *     When two magnets with opposing poles upwards were used to set and
+ *     unset the latch, exactly two rotations were registered for each
+ *     actual rotation. Either there is some misunderstanding of how Hall
+ *     latches work, or magnet and sensor positioning was somehow bad, or there
+ *     is some bug in this class.
  */
 class LatchSensorReader : public SensorReader {
 public:

@@ -5,10 +5,10 @@
  *      Author: Otto Urpelainen
  */
 
-#include "SensorReader.h"
-
 #ifndef ROTATIONCOUNTER_H_
 #define ROTATIONCOUNTER_H_
+
+#include "SensorReader.h"
 
 #define __DEBUG
 

@@ -1,5 +1,5 @@
 /*
- * LinearSensorReader.h
+ * SensorReader.h
  *
  *  Created on: 23.8.2015
  *      Author: Otto Urpelainen
