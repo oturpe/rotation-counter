@@ -1,14 +1,14 @@
 /*
- * LinearSensor.h
+ * LinearSensorReader.h
  *
  *  Created on: 6.11.2013
  *      Author: Otto Urpelainen
  */
 
-#ifndef LINEARSENSOR_H_
-#define LINEARSENSOR_H_
+#ifndef LINEARSENSORREADER_H_
+#define LINEARSENSORREADER_H_
 
-class LinearSensorReader {
+class LinearSensorReader : public SensorReader {
 public:
     /*'
      * Creates and initializes a new linear sensor reader.
@@ -24,7 +24,7 @@ public:
      *
      * @return true once for each full rotation
      */
-    bool read();
+    virtual bool read();
 
 private:
     /** Analog input pin to read. */

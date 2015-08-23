@@ -5,17 +5,18 @@
  *      Author: Otto Urpelainen
  */
 
-#include "RotationCounter.h"
 #include "Arduino.h"
+#include "SensorReader.h"
 #include "LinearSensorReader.h"
+#include "RotationCounter.h"
 
 LinearSensorReader::LinearSensorReader(int sensorPin) :
         sensorPin(sensorPin),passing(false) {
 }
 
 bool LinearSensorReader::read() {
-    static const int THRESHOLD_HIGH = 520;
-    static const int THRESHOLD_LOW = 490;
+    static const int THRESHOLD_HIGH = 550;
+    static const int THRESHOLD_LOW = 520;
 
     int value = analogRead(sensorPin);
     bool found =  value > THRESHOLD_HIGH;

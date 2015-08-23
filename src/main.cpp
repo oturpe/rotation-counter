@@ -4,8 +4,7 @@
 #include "LinearSensorReader.h"
 #include "SerialReporter.h"
 
-#define SENSOR_PIN 5
-LinearSensorReader sensor(SENSOR_PIN);
+SensorReader * sensorReader = RotationCounter::initializeSensor();
 SerialReporter reporter;
 
 // The setup() method runs once, when the sketch starts
@@ -15,7 +14,7 @@ void setup() {
 
 // the loop() method runs over and over again, as long as the Arduino has power.
 void loop() {
-    if(sensor.read()) {
+    if(sensorReader->read()) {
         reporter.next();
     }
 }
