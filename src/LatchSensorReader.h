@@ -1,7 +1,7 @@
 /*
  * LatchSensorReader.h
  *
- *  Created on: 23.8.2015
+ *  Created on: 2015-08-23
  *      Author: Otto Urpelainen
  */
 

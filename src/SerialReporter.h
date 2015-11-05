@@ -1,7 +1,7 @@
 /*
  * SerialReporter.h
  *
- *  Created on: 7.11.2013
+ *  Created on: 2013-11-07
  *      Author: Otto Urpelainen
  */
 

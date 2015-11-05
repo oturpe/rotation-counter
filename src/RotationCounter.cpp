@@ -8,6 +8,7 @@
 #include "RotationCounter.h"
 #include "LinearSensorReader.h"
 #include "LatchSensorReader.h"
+#include "UnipolarSwitchReader.h"
 
 SensorReader * RotationCounter::initializeSensor() {
     int sensorPin = 7;

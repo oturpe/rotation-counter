@@ -1,7 +1,7 @@
 /*
  * LinearSensorReader.h
  *
- *  Created on: 6.11.2013
+ *  Created on: 2013-11-06
  *      Author: Otto Urpelainen
  */
 

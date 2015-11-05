@@ -1,7 +1,5 @@
 #include "RotationCounter.h"
 #include "Arduino.h"
-#include "new.h"
-#include "LinearSensorReader.h"
 #include "SerialReporter.h"
 
 SensorReader * sensorReader = RotationCounter::initializeSensor();

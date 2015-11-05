@@ -1,7 +1,7 @@
 /*
  * RotationCounter.h
  *
- *  Created on: 11.11.2013
+ *  Created on: 2013-11-11
  *      Author: Otto Urpelainen
  */
 
